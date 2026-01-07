@@ -1,7 +1,9 @@
--- run this query as soon as you come in on Monday morning. then refresh the tableau datasource by going into the Tableau application and refresh datasource. 
--- work with Data Engineering to productionalize this table loading once a week on Monday (or Sunday) so you no longer need to manually refresh the data. 
--- work with Josh and Sascha to make sure they are aligned on the outputs and use case for WBR but based on their Owners_Survey_Corp view
--- If you need additional requirements, chat with Jeremiah so he can help you source additional dimensions as needed
+-- 1. Run this query in Snowflake to update the DEV table: 
+--    CX_ANALYTICS_DEV.JEREMIAH_DEV_EXPLORATORY.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES
+-- 2. Refresh the Tableau datasource.
+-- 3. NEXT STEP: Adam to coordinate with Data Engineering to move this from 
+--    JEREMIAH_DEV_EXPLORATORY to the proper Data Warehouse production folder.
+-- 4. Once moved and automated, this DEV table will be deprecated.
 
 CREATE OR REPLACE TABLE "CX_ANALYTICS"."CX_MODELS"."CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES" AS
 WITH SurveyData AS (
