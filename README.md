@@ -42,7 +42,6 @@ To follow team best practices, this project uses a two-stage deployment:
 
 1. **Phase 1 (Current):** Data is generated in the **DEV** schema:
    `CX_ANALYTICS_DEV.JEREMIAH_DEV_EXPLORATORY`
-2. **Phase 2 (Target):** Data Engineering will migrate the logic to the **PROD** schema:
-   `CX_ANALYTICS.CX_MODELS`
+2. **Phase 2 (Target):** Data Engineering will migrate the logic to the **PROD** schema
 
 **Note to Business Owner:** Once Phase 2 is complete and the table is automated, the version in the DEV folder will be deprecated.
