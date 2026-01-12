@@ -1,0 +1,1378 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.25.1003.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.23 (20233.25.1003.0948)' source-platform='mac' version='18.1' xml:base='https://tableau.sonos.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://tableau.sonos.com/workbooks/CXWeeklyVoCReporting?rev=1.5' id='CXWeeklyVoCReporting' path='/workbooks' revision='1.7' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES) (CX_MODELS)' inline='true' name='federated.13g49og0y7xw3z1e04x3908jc1un' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sonos.us-east-1.snowflakecomputing.com' name='snowflake.12fw7dp1npqdsk1an20xm0t1opya'>
+            <connection authentication='oauth' class='snowflake' dbname='CX_ANALYTICS_DEV' instanceurl='https://sonos.us-east-1.snowflakecomputing.com' odbc-connect-string-extras='' one-time-sql='' role='SNOWFLAKE_CX_ANALYTICS' schema='JEREMIAH_DEV_EXPLORATORY' server='sonos.us-east-1.snowflakecomputing.com' server-oauth='server-custom' service='SNOWFLAKE_CX_ANALYTICS' username='JKING@SONOS.COM' warehouse='CX_ANALYTICS_WH' workgroup-auth-mode='prompt' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='snowflake.12fw7dp1npqdsk1an20xm0t1opya' name='CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES' table='[CX_ANALYTICS_DEV].[JEREMIAH_DEV_EXPLORATORY].[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='snowflake.12fw7dp1npqdsk1an20xm0t1opya' name='CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES' table='[CX_ANALYTICS_DEV].[JEREMIAH_DEV_EXPLORATORY].[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>FISCAL_MONTH_DESC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FISCAL_MONTH_DESC]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>FISCAL_MONTH_DESC</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16777216</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FISCAL_MONTH_ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[FISCAL_MONTH_ID]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>FISCAL_MONTH_ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FISCAL_QUARTER_DESC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FISCAL_QUARTER_DESC]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>FISCAL_QUARTER_DESC</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16777216</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FISCAL_QUARTER_ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[FISCAL_QUARTER_ID]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>FISCAL_QUARTER_ID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FISCAL_WEEK_DESC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FISCAL_WEEK_DESC]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>FISCAL_WEEK_DESC</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16777216</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FISCAL_WEEK_ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[FISCAL_WEEK_ID]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>FISCAL_WEEK_ID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FISCAL_YEAR_ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[FISCAL_YEAR_ID]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>FISCAL_YEAR_ID</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FISCAL_WEEK_NPS_SCORE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FISCAL_WEEK_NPS_SCORE]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>FISCAL_WEEK_NPS_SCORE</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REPURCHASE_SCORE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[REPURCHASE_SCORE]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>REPURCHASE_SCORE</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NPS_4_WEEK_ROLLING</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NPS_4_WEEK_ROLLING]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>NPS_4_WEEK_ROLLING</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LTR_4_WEEK_ROLLING</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[LTR_4_WEEK_ROLLING]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>LTR_4_WEEK_ROLLING</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NPS_RESPONSE_VOLUME</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[NPS_RESPONSE_VOLUME]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>NPS_RESPONSE_VOLUME</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>18</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LTR_VOLUME</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[LTR_VOLUME]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>LTR_VOLUME</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>18</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NPS Promoters %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NPS Promoters %]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>NPS Promoters %</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NPS Passive %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NPS Passive %]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>NPS Passive %</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NPS Detractor %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NPS Detractor %]</local-name>
+            <parent-name>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]</parent-name>
+            <remote-alias>NPS Detractor %</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Fiscal Month Desc' datatype='string' name='[FISCAL_MONTH_DESC]' role='dimension' type='nominal' />
+      <column caption='Fiscal Month Id' datatype='integer' name='[FISCAL_MONTH_ID]' role='dimension' type='ordinal' />
+      <column caption='Fiscal Quarter Desc' datatype='string' name='[FISCAL_QUARTER_DESC]' role='dimension' type='nominal' />
+      <column caption='Fiscal Quarter Id' datatype='integer' name='[FISCAL_QUARTER_ID]' role='dimension' type='ordinal' />
+      <column caption='Fiscal Week Desc' datatype='string' name='[FISCAL_WEEK_DESC]' role='dimension' type='nominal' />
+      <column caption='Fiscal Week Id' datatype='integer' name='[FISCAL_WEEK_ID]' role='dimension' type='ordinal' />
+      <column caption='Fiscal Week Nps Score' datatype='real' name='[FISCAL_WEEK_NPS_SCORE]' role='measure' type='quantitative' />
+      <column caption='Fiscal Year Id' datatype='integer' name='[FISCAL_YEAR_ID]' role='dimension' type='ordinal' />
+      <column caption='Repurchase 4 Week Rolling' datatype='real' name='[LTR_4_WEEK_ROLLING]' role='measure' type='quantitative' />
+      <column caption='Repurchase Response Volume' datatype='integer' name='[LTR_VOLUME]' role='measure' type='quantitative' />
+      <column caption='Nps 4 Week Rolling' datatype='real' name='[NPS_4_WEEK_ROLLING]' role='measure' type='quantitative' />
+      <column caption='Nps Response Volume' datatype='integer' name='[NPS_RESPONSE_VOLUME]' role='measure' type='quantitative' />
+      <column caption='Repurchase Weekly Score' datatype='real' name='[REPURCHASE_SCORE]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES' datatype='table' name='[__tableau_internal_object_id__].[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142]' role='measure' type='quantitative' />
+      <column-instance column='[FISCAL_WEEK_NPS_SCORE]' derivation='Sum' name='[sum:FISCAL_WEEK_NPS_SCORE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[LTR_4_WEEK_ROLLING]' derivation='Sum' name='[sum:LTR_4_WEEK_ROLLING:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[LTR_VOLUME]' derivation='Sum' name='[sum:LTR_VOLUME:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NPS_4_WEEK_ROLLING]' derivation='Sum' name='[sum:NPS_4_WEEK_ROLLING:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NPS_RESPONSE_VOLUME]' derivation='Sum' name='[sum:NPS_RESPONSE_VOLUME:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[REPURCHASE_SCORE]' derivation='Sum' name='[sum:REPURCHASE_SCORE:qk]' pivot='key' type='quantitative' />
+      <group caption='Current Week Set' name='[Fiscal Week Desc Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='MAX([FISCAL_WEEK_DESC])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[FISCAL_WEEK_DESC]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <group caption='Last 14 Weeks Set' name='[Last 12 Weeks Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='14' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='MAX([FISCAL_WEEK_DESC])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[FISCAL_WEEK_DESC]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <group caption='Last 1 Weeks Set' name='[Last 2 Weeks Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='MAX([FISCAL_WEEK_DESC])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[FISCAL_WEEK_DESC]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <group caption='Stable 13 Week Filter' delimiter=',' name='[Set 1]' name-style='unqualified'>
+        <groupfilter function='except'>
+          <groupfilter field='[Last 12 Weeks Set]' function='reference' />
+          <groupfilter field='[Last 2 Weeks Set]' function='reference' />
+        </groupfilter>
+      </group>
+      <group caption='Stable 12 Weeks Filter' delimiter=',' name='[Set 2]' name-style='unqualified'>
+        <groupfilter function='except'>
+          <groupfilter field='[Top 13 Weeks Set]' function='reference' />
+          <groupfilter field='[Last 2 Weeks Set]' function='reference' />
+        </groupfilter>
+      </group>
+      <group caption='Top 13 Weeks Set' name='[Top 13 Weeks Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='13' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='MAX([FISCAL_WEEK_DESC])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[FISCAL_WEEK_DESC]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/jking/Documents/My Tableau Repository/Datasources/CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES) (CX_MODELS).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/06/2026 03:17:13 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES) (CX_MODELS)' increment-value='%null%' refresh-type='create' rows-inserted='14' timestamp-start='2026-01-06 15:06:18.772' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>FISCAL_MONTH_DESC</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FISCAL_MONTH_DESC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FISCAL_MONTH_DESC</remote-alias>
+              <ordinal>0</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FISCAL_MONTH_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FISCAL_MONTH_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FISCAL_MONTH_ID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FISCAL_QUARTER_DESC</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FISCAL_QUARTER_DESC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FISCAL_QUARTER_DESC</remote-alias>
+              <ordinal>2</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FISCAL_QUARTER_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FISCAL_QUARTER_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FISCAL_QUARTER_ID</remote-alias>
+              <ordinal>3</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FISCAL_WEEK_DESC</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FISCAL_WEEK_DESC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FISCAL_WEEK_DESC</remote-alias>
+              <ordinal>4</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FISCAL_WEEK_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FISCAL_WEEK_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FISCAL_WEEK_ID</remote-alias>
+              <ordinal>5</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FISCAL_YEAR_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[FISCAL_YEAR_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FISCAL_YEAR_ID</remote-alias>
+              <ordinal>6</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FISCAL_WEEK_NPS_SCORE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FISCAL_WEEK_NPS_SCORE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FISCAL_WEEK_NPS_SCORE</remote-alias>
+              <ordinal>7</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>REPURCHASE_SCORE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[REPURCHASE_SCORE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>REPURCHASE_SCORE</remote-alias>
+              <ordinal>8</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NPS_4_WEEK_ROLLING</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[NPS_4_WEEK_ROLLING]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NPS_4_WEEK_ROLLING</remote-alias>
+              <ordinal>9</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LTR_4_WEEK_ROLLING</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LTR_4_WEEK_ROLLING]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LTR_4_WEEK_ROLLING</remote-alias>
+              <ordinal>10</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NPS_RESPONSE_VOLUME</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[NPS_RESPONSE_VOLUME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NPS_RESPONSE_VOLUME</remote-alias>
+              <ordinal>11</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LTR_VOLUME</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LTR_VOLUME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LTR_VOLUME</remote-alias>
+              <ordinal>12</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NPS Promoters %</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[NPS Promoters %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NPS Promoters %</remote-alias>
+              <ordinal>13</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NPS Passive %</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[NPS Passive %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NPS Passive %</remote-alias>
+              <ordinal>14</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NPS Detractor %</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[NPS Detractor %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NPS Detractor %</remote-alias>
+              <ordinal>15</ordinal>
+              <family>CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='13' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#7c4d79'>
+              <bucket>&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:LTR_4_WEEK_ROLLING:qk]&quot;</bucket>
+            </map>
+            <map to='#7c4d79'>
+              <bucket>&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:NPS_4_WEEK_ROLLING:qk]&quot;</bucket>
+            </map>
+            <map to='#d5d5d5'>
+              <bucket>&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:LTR_VOLUME:qk]&quot;</bucket>
+            </map>
+            <map to='#d5d5d5'>
+              <bucket>&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:NPS_RESPONSE_VOLUME:qk]&quot;</bucket>
+            </map>
+            <map to='#daabcb'>
+              <bucket>&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:FISCAL_WEEK_NPS_SCORE:qk]&quot;</bucket>
+            </map>
+            <map to='#daabcb'>
+              <bucket>&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:REPURCHASE_SCORE:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES' id='CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_E1B4861F7B2340DB87AC35D22B0CD1A6'>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+          <object caption='CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES' id='CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS_DEV.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES)_283EA04223E14328AC50B4DF6401B142'>
+            <properties context=''>
+              <relation connection='snowflake.12fw7dp1npqdsk1an20xm0t1opya' name='CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES' table='[CX_ANALYTICS_DEV].[JEREMIAH_DEV_EXPLORATORY].[CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Weekly Likelihood to Repurchase'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontsize='36'>&lt;Sheet Name&gt;</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontsize='20'>Source: Owner&apos;s Survey</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='WeeklyLikelihoodtoRepurchase' path='/workbooks/CXWeeklyVoCReporting' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES) (CX_MODELS)' name='federated.13g49og0y7xw3z1e04x3908jc1un' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13g49og0y7xw3z1e04x3908jc1un'>
+            <column caption='Fiscal Week Desc' datatype='string' name='[FISCAL_WEEK_DESC]' role='dimension' type='nominal' />
+            <column caption='Repurchase 4 Week Rolling' datatype='real' name='[LTR_4_WEEK_ROLLING]' role='measure' type='quantitative' />
+            <column caption='Repurchase Response Volume' datatype='integer' name='[LTR_VOLUME]' role='measure' type='quantitative' />
+            <column caption='Repurchase Weekly Score' datatype='real' name='[REPURCHASE_SCORE]' role='measure' type='quantitative' />
+            <column-instance column='[FISCAL_WEEK_DESC]' derivation='None' name='[none:FISCAL_WEEK_DESC:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LTR_4_WEEK_ROLLING]' derivation='Sum' name='[sum:LTR_4_WEEK_ROLLING:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LTR_VOLUME]' derivation='Sum' name='[sum:LTR_VOLUME:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[REPURCHASE_SCORE]' derivation='Sum' name='[sum:REPURCHASE_SCORE:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:REPURCHASE_SCORE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:LTR_4_WEEK_ROLLING:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:REPURCHASE_SCORE:qk]&quot;</bucket>
+              <bucket>&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:LTR_4_WEEK_ROLLING:qk]&quot;</bucket>
+              <bucket>&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:LTR_VOLUME:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[Multiple Values]' field-type='quantitative' max='10.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[Multiple Values]' scope='rows' value='Score' />
+            <format attr='title' class='0' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:LTR_VOLUME:qk]' scope='rows' value='Response Volume' />
+            <encoding attr='space' class='0' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:LTR_VOLUME:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='render-fold-reversed' value='true' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:REPURCHASE_SCORE:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:LTR_4_WEEK_ROLLING:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[Multiple Values]' value='20' />
+            <format attr='font-size' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:LTR_VOLUME:qk]' value='20' />
+            <format attr='text-orientation' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[none:FISCAL_WEEK_DESC:nk]' value='-90' />
+            <format attr='font-size' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[none:FISCAL_WEEK_DESC:nk]' value='20' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' value='360' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' value='Legend' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:LTR_VOLUME:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.13g49og0y7xw3z1e04x3908jc1un].[Multiple Values]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2413811683654785' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.13g49og0y7xw3z1e04x3908jc1un].[Multiple Values] + [federated.13g49og0y7xw3z1e04x3908jc1un].[sum:LTR_VOLUME:qk])</rows>
+        <cols>[federated.13g49og0y7xw3z1e04x3908jc1un].[none:FISCAL_WEEK_DESC:nk]</cols>
+      </table>
+      <simple-id uuid='{5778FD8C-2FE8-44BA-9575-9D466AE6A709}' />
+    </worksheet>
+    <worksheet name='Weekly Net Promoter Score (NPS)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontsize='36'>&lt;Sheet Name&gt;</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontsize='20'>Source: Owner&apos;s Survey</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='WeeklyNetPromoterScoreNPS' path='/workbooks/CXWeeklyVoCReporting' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES (CX_ANALYTICS.CX_VOC_WEEKLY_REPORT_OWNERS_SURVEY_SCORES) (CX_MODELS)' name='federated.13g49og0y7xw3z1e04x3908jc1un' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13g49og0y7xw3z1e04x3908jc1un'>
+            <column caption='Fiscal Week Desc' datatype='string' name='[FISCAL_WEEK_DESC]' role='dimension' type='nominal' />
+            <column caption='Fiscal Week Nps Score' datatype='real' name='[FISCAL_WEEK_NPS_SCORE]' role='measure' type='quantitative' />
+            <column caption='Nps 4 Week Rolling' datatype='real' name='[NPS_4_WEEK_ROLLING]' role='measure' type='quantitative' />
+            <column caption='Nps Response Volume' datatype='integer' name='[NPS_RESPONSE_VOLUME]' role='measure' type='quantitative' />
+            <column-instance column='[FISCAL_WEEK_DESC]' derivation='None' name='[none:FISCAL_WEEK_DESC:nk]' pivot='key' type='nominal' />
+            <column-instance column='[FISCAL_WEEK_NPS_SCORE]' derivation='Sum' name='[sum:FISCAL_WEEK_NPS_SCORE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NPS_4_WEEK_ROLLING]' derivation='Sum' name='[sum:NPS_4_WEEK_ROLLING:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NPS_RESPONSE_VOLUME]' derivation='Sum' name='[sum:NPS_RESPONSE_VOLUME:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:FISCAL_WEEK_NPS_SCORE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:NPS_4_WEEK_ROLLING:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:FISCAL_WEEK_NPS_SCORE:qk]&quot;</bucket>
+              <bucket>&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:NPS_4_WEEK_ROLLING:qk]&quot;</bucket>
+              <bucket>&quot;[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:NPS_RESPONSE_VOLUME:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:NPS_RESPONSE_VOLUME:qk]' field-type='quantitative' fold='true' min='0' range-type='fixedmin' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:NPS_RESPONSE_VOLUME:qk]' scope='rows' value='Response Volume' />
+            <format attr='title' class='0' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[Multiple Values]' scope='rows' value='NPS Score' />
+            <format attr='render-fold-reversed' value='true' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-orientation' data-class='subtotal' scope='cols' value='-90' />
+            <format attr='font-size' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' value='20' />
+            <format attr='font-size' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[Multiple Values]' value='20' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[Multiple Values]' value='20' />
+            <format attr='font-size' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:NPS_RESPONSE_VOLUME:qk]' value='20' />
+            <format attr='font-size' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[none:FISCAL_WEEK_DESC:nk]' value='20' />
+            <format attr='text-orientation' scope='cols' value='-90' />
+            <format attr='font-size' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' value='20' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' value='360' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' value='Legend' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.13g49og0y7xw3z1e04x3908jc1un].[none:FISCAL_WEEK_DESC:nk]' value='Search Fiscal Weeks To Modify View' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.13g49og0y7xw3z1e04x3908jc1un].[sum:NPS_RESPONSE_VOLUME:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.13g49og0y7xw3z1e04x3908jc1un].[Multiple Values]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2413811683654785' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.13g49og0y7xw3z1e04x3908jc1un].[Multiple Values] + [federated.13g49og0y7xw3z1e04x3908jc1un].[sum:NPS_RESPONSE_VOLUME:qk])</rows>
+        <cols>[federated.13g49og0y7xw3z1e04x3908jc1un].[none:FISCAL_WEEK_DESC:nk]</cols>
+      </table>
+      <simple-id uuid='{6ED30333-02B8-4BEA-A7DF-DC47020EB82B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Weekly Net Promoter Score (NPS)'>
+      <cards>
+        <edge name='left'>
+          <strip size='178'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card pane-specification-id='2' param='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.13g49og0y7xw3z1e04x3908jc1un].[Last 12 Weeks Set]</field>
+            <field>[federated.13g49og0y7xw3z1e04x3908jc1un].[Set 1]</field>
+            <field>[federated.13g49og0y7xw3z1e04x3908jc1un].[Set 2]</field>
+            <field>[federated.13g49og0y7xw3z1e04x3908jc1un].[none:Calculation_442056509665652736:nk]</field>
+            <field>[federated.13g49og0y7xw3z1e04x3908jc1un].[none:FISCAL_WEEK_DESC:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9185E085-651A-4FB5-A1A1-640D015EC7B8}' />
+    </window>
+    <window class='worksheet' name='Weekly Likelihood to Repurchase'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card pane-specification-id='2' param='[federated.13g49og0y7xw3z1e04x3908jc1un].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.13g49og0y7xw3z1e04x3908jc1un].[Last 12 Weeks Set]</field>
+            <field>[federated.13g49og0y7xw3z1e04x3908jc1un].[Set 1]</field>
+            <field>[federated.13g49og0y7xw3z1e04x3908jc1un].[none:Calculation_442056509665652736:nk]</field>
+            <field>[federated.13g49og0y7xw3z1e04x3908jc1un].[none:FISCAL_WEEK_DESC:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A3F919A0-591C-4930-BC94-0A8B35CCC0A8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Weekly Net Promoter Score (NPS)' width='384'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
